@@ -30,6 +30,7 @@ const cheerio = require("cheerio");
     // specific content
     console.log(`First h1 tag: ${$('h1').text()}`)
     console.log(`First p tag: ${$('p').text()}`)
+    console.log(`First a tag: ${$('a').text()}`)
 
 })();
 
