@@ -1,8 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-console.log(process.argv);
-
 (async () => {
 
     async function fetchHTML(url){
@@ -23,7 +21,7 @@ console.log(process.argv);
     }
     
     const [ ,,argURL ] = process.argv;
-    
+
     const $ = await fetchHTML(argURL || "https://example.com")
     
     // full HTML
